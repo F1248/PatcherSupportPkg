@@ -66,7 +66,7 @@ class GenerateDiskImage:
             "-format", DMG_FORMAT,
             "-fs", "HFS+",
             "-volname", DMG_VOLNAME,
-            "-megabytes", DMG_SIZE
+            "-megabytes", DMG_SIZE,
             "-ov",            
         ], capture_output=True)
         if result.returncode != 0:
